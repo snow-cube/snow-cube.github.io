@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="方法,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="这个人很懒，什么都没有留下！！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Snow Cube&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="思路启发求位数这很容易想到求该数以10为底的对数，然后取整，但有一个问题：100的位数为3，但100的常用对数为2，1000等也有这个问题 可以用这个方法解决： 原来我们用result = ceil(log10(num))，现在用result = floor(log10(num)+1)即可解决这个 问题。这样，100的结果就是3了，而其他普通数没有影响。 提取每一位数字这个任务很容易想到/和%这两">
+<meta name="keywords" content="方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ 求自然数的位数及提取每一位的数字">
+<meta property="og:url" content="http://yoursite.com/2019/05/02/digit/index.html">
 <meta property="og:site_name" content="Snow Cube&#39;s Blog">
-<meta property="og:description" content="这个人很懒，什么都没有留下！！">
+<meta property="og:description" content="思路启发求位数这很容易想到求该数以10为底的对数，然后取整，但有一个问题：100的位数为3，但100的常用对数为2，1000等也有这个问题 可以用这个方法解决： 原来我们用result = ceil(log10(num))，现在用result = floor(log10(num)+1)即可解决这个 问题。这样，100的结果就是3了，而其他普通数没有影响。 提取每一位数字这个任务很容易想到/和%这两">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-02T12:52:06.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Snow Cube&#39;s Blog">
-<meta name="twitter:description" content="这个人很懒，什么都没有留下！！">
+<meta name="twitter:title" content="C++ 求自然数的位数及提取每一位的数字">
+<meta name="twitter:description" content="思路启发求位数这很容易想到求该数以10为底的对数，然后取整，但有一个问题：100的位数为3，但100的常用对数为2，1000等也有这个问题 可以用这个方法解决： 原来我们用result = ceil(log10(num))，现在用result = floor(log10(num)+1)即可解决这个 问题。这样，100的结果就是3了，而其他普通数没有影响。 提取每一位数字这个任务很容易想到/和%这两">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/02/digit/">
 
 
 
 
 
-  <title>归档 | Snow Cube's Blog</title>
+  <title>C++ 求自然数的位数及提取每一位的数字 | Snow Cube's Blog</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,107 +249,210 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/02/digit/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Snow Cube - 张渊">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/icon.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Snow Cube's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/02/digit/" itemprop="url">
-              
-                <span itemprop="name">C++ 求自然数的位数及提取每一位的数字</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">C++ 求自然数的位数及提取每一位的数字</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-02T20:44:32+08:00" content="2019-05-02">
-          05-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-02T20:44:32+08:00">
+                2019-05-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/05/02/digit/" class="leancloud_visitors" data-flag-title="C++ 求自然数的位数及提取每一位的数字">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  537
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/13/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-13T21:15:54+08:00" content="2019-04-13">
-          04-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h2 id="思路启发"><a href="#思路启发" class="headerlink" title="思路启发"></a>思路启发</h2><h3 id="求位数"><a href="#求位数" class="headerlink" title="求位数"></a>求位数</h3><p>这很容易想到求该数以10为底的对数，然后取整，但有一个问题：<strong>100的位数为3，但100的常用对数为2，1000等也有这个问题</strong></p>
+<p>可以用这个方法解决：</p>
+<p>原来我们用<code>result = ceil(log10(num))</code>，现在用<code>result = floor(log10(num)+1)</code>即可解决这个 问题。这样，100的结果就是3了，而其他普通数没有影响。</p>
+<h3 id="提取每一位数字"><a href="#提取每一位数字" class="headerlink" title="提取每一位数字"></a>提取每一位数字</h3><p>这个任务很容易想到<code>/</code>和<code>%</code>这两个运算符，我们就用这两个运算符解决。</p>
+<p>看看我们用这两个运算符可以做到什么：</p>
+<ul>
+<li><code>num / (int)pow(10, result-n)</code>可以提取出<code>num</code>的前n位数字，如：<code>12345 / pow(10, 3)</code>为12；其中<code>result</code>为前面求得的位数。</li>
+<li><code>num % (int)pow(10, n)</code>可以提取出<code>num</code>的后n位数字，如：<code>12345 % pow(10, 3)</code>为345；</li>
+</ul>
+<p>运用这两个能力，我们可以轻松得到整数的最高位和最低位：</p>
+<p><strong><code>num / (int)pow(10, result-1)</code>可以求出最高位；</strong>    </p>
+<p><strong><code>num % 10</code>可以求出最低位；</strong></p>
+<p>那么，我们就想到：如果我们能把要提取的一位转换为最高位或最低位，就可以用上面的方法来提取出它：</p>
+<p>两种方法：</p>
+<ol>
+<li><p><strong>使用<code>/</code>取出前<code>result - n + 1</code>位数字，然后提取出最低位，即可提取出原数第n位：</strong></p>
+<p><code>num / (int)pow(10, n-1) % 10</code></p>
+</li>
+<li><p><strong>使用<code>%</code>取出后n位数字，然后提取出最高位，即可提取出原数第n位：</strong></p>
+<p><code>num % (int)pow(10, n) / (int)pow(10, n-1)</code></p>
+</li>
+</ol>
+<p>最后这两种方法中第一种比较直观高效，我认为第一种较好。</p>
+<p>然后用求一位的方法就可以提取每一位数字了。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>这里用第一种方法来实现几个函数：</p>
+<ol>
+<li>提取第n位的函数：</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">digit</span><span class="params">(<span class="keyword">int</span> num, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num / (<span class="keyword">int</span>)<span class="built_in">pow</span>(<span class="number">10</span>, n<span class="number">-1</span>) % <span class="number">10</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>将每一位存储在数组中的函数，并返回位数：</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">every_digit</span><span class="params">(<span class="keyword">int</span> num, <span class="keyword">int</span> * arr)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        arr[i++] = num % <span class="number">10</span>;</span><br><span class="line">        num /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>我是一个初学者，还需提高，如有问题请多多指教。</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/方法/" rel="tag"># 方法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/13/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -355,6 +460,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -375,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -445,6 +563,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路启发"><span class="nav-number">1.</span> <span class="nav-text">思路启发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#求位数"><span class="nav-number">1.1.</span> <span class="nav-text">求位数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提取每一位数字"><span class="nav-number">1.2.</span> <span class="nav-text">提取每一位数字</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -594,6 +728,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
